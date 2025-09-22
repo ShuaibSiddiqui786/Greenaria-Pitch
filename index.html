@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenaria Verified - Pitch Deck</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="pitch-deck">
+        <!-- Navigation -->
+        <div class="navigation">
+            <button class="nav-btn prev-btn" id="prevBtn">‹</button>
+            <button class="nav-btn next-btn" id="nextBtn">›</button>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="slide-indicators" id="slideIndicators"></div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide active" data-slide="1">
+            <div class="slide-content title-slide">
+                <div class="company-logo">🏢</div>
+                <h1 class="company-name">Greenaria Verified</h1>
+                <h2 class="tagline">India's First Trustified Real Estate Platform</h2>
+                <p class="mission">Creating the hallmark of trust in property transactions</p>
+                <div class="contact-info">
+                    <p><strong>Contact:</strong> Shuaib Siddiqui</p>
+                    <p><strong>Phone:</strong> +91 9891553661</p>
+                    <p><strong>Email:</strong> info@greenariabuildtech.com</p>
+                </div>
+                <div class="slide-number">1/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Problem -->
+        <div class="slide" data-slide="2">
+            <div class="slide-content">
+                <h1>The Trust Crisis & Market Failure</h1>
+                <div class="problem-grid">
+                    <div class="problem-item">
+                        <div class="problem-icon">💸</div>
+                        <h3>₹600+ Crores Lost Annually</h3>
+                        <p>Major competitors burning cash with massive losses</p>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">⚠️</div>
+                        <h3>20-25% Fake Listings</h3>
+                        <p>Broken verification systems across all platforms</p>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">📉</div>
+                        <h3>Failed Business Models</h3>
+                        <p>High costs, low margins, unsustainable operations</p>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">🤝</div>
+                        <h3>Broken Trust</h3>
+                        <p>Users, developers, and investors losing confidence</p>
+                    </div>
+                </div>
+                <div class="slide-number">2/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Opportunity -->
+        <div class="slide" data-slide="3">
+            <div class="slide-content">
+                <h1>Massive Profitable Opportunity</h1>
+                <div class="opportunity-stats">
+                    <div class="stat-card">
+                        <h2>₹31,500 Crores</h2>
+                        <p>PropTech Market by 2030</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>19.4%</h2>
+                        <p>CAGR Growth Rate</p>
+                    </div>
+                    <div class="stat-card profit-opportunity">
+                        <h2>Profit Gap</h2>
+                        <p>While others lose, we profit</p>
+                    </div>
+                </div>
+                <div class="market-chart-container" style="position: relative; height: 300px;">
+                    <canvas id="opportunityChart"></canvas>
+                </div>
+                <div class="slide-number">3/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Competition Analysis -->
+        <div class="slide" data-slide="4">
+            <div class="slide-content">
+                <h1>Competition Analysis: The Loss Leaders</h1>
+                <div class="competitive-image">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/30d3d33374b9825e52a376e37101ad59/58a3e9d6-aa7d-45c8-ae87-bc02245eefa6/0a9147e7.png" alt="Competitive Analysis" class="chart-image">
+                </div>
+                <div class="competitor-summary">
+                    <div class="competitor-loss">
+                        <h3>Total Market Losses: ₹600+ Crores Annually</h3>
+                        <p>While established players burn cash, Greenaria targets <strong>profitability from Year 1</strong></p>
+                    </div>
+                </div>
+                <div class="slide-number">4/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Solution -->
+        <div class="slide" data-slide="5">
+            <div class="slide-content">
+                <h1>Our Solution: Profitable Trustified Real Estate</h1>
+                <div class="solution-features">
+                    <div class="feature">
+                        <div class="feature-icon">✅</div>
+                        <h3>Independent Verification</h3>
+                        <p>Professional property certification with 67% profit margin</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💰</div>
+                        <h3>Superior Unit Economics</h3>
+                        <p>Profitable model vs competitors' cash burn</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🥽</div>
+                        <h3>AR/VR + AI Integration</h3>
+                        <p>Technology advantage with revenue generation</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Lean Operations</h3>
+                        <p>Efficient processes, minimal overhead costs</p>
+                    </div>
+                </div>
+                <div class="slide-number">5/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Business Model -->
+        <div class="slide" data-slide="6">
+            <div class="slide-content">
+                <h1>Superior Unit Economics: 67% Profit Margin</h1>
+                <div class="revenue-chart-container" style="position: relative; height: 300px;">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+                <div class="revenue-streams">
+                    <div class="revenue-item">
+                        <h4>Verification & Certification</h4>
+                        <p>₹15K-25K per project • High margin core service</p>
+                    </div>
+                    <div class="revenue-item">
+                        <h4>Technology Services</h4>
+                        <p>AR/VR tours, AI valuation • Premium pricing</p>
+                    </div>
+                    <div class="revenue-item">
+                        <h4>Premium Subscriptions</h4>
+                        <p>₹30K-75K annual packages • Recurring revenue</p>
+                    </div>
+                    <div class="revenue-item">
+                        <h4>Transaction Fees</h4>
+                        <p>0.5-1% commission • Scalable income</p>
+                    </div>
+                </div>
+                <div class="profitability-highlight">
+                    <h3>🎯 Year 1 Target: ₹3 Cr Revenue, ₹2 Cr Profit (67% margin)</h3>
+                </div>
+                <div class="slide-number">6/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Team Structure -->
+        <div class="slide" data-slide="7">
+            <div class="slide-content">
+                <h1>Lean Team Structure: ₹20K Monthly Cost</h1>
+                <div class="team-image">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/30d3d33374b9825e52a376e37101ad59/08ea58b3-b72b-47ec-b223-301a5f55dd4c/fbefe96b.png" alt="Team Structure" class="chart-image">
+                </div>
+                <div class="team-advantages">
+                    <div class="advantage-item">
+                        <h4>💡 Leadership</h4>
+                        <p>Shuaib leading without salary burden</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h4>🛠️ Efficient Development</h4>
+                        <p>Existing developer + college partnerships</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h4>📚 Cost Optimization</h4>
+                        <p>Unpaid interns + minimal paid resources</p>
+                    </div>
+                </div>
+                <div class="slide-number">7/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Investment Breakdown -->
+        <div class="slide" data-slide="8">
+            <div class="slide-content">
+                <h1>Lean Investment: ₹40-45 Lakhs Initial</h1>
+                <div class="investment-image">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/30d3d33374b9825e52a376e37101ad59/8c13d367-06dc-4a5b-b941-93b84e2679c6/d219460d.png" alt="Investment Breakdown" class="chart-image">
+                </div>
+                <div class="investment-highlights">
+                    <div class="highlight-item marketing">
+                        <h4>📈 78% Marketing Focus</h4>
+                        <p>₹30-36L for customer acquisition & growth</p>
+                    </div>
+                    <div class="highlight-item development">
+                        <h4>💻 8% Development Cost</h4>
+                        <p>₹2-5L only for tech development (existing team)</p>
+                    </div>
+                    <div class="highlight-item operations">
+                        <h4>⚙️ 10% Operations</h4>
+                        <p>₹4-5L for team & operational expenses</p>
+                    </div>
+                </div>
+                <div class="slide-number">8/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Go-to-Market -->
+        <div class="slide" data-slide="9">
+            <div class="slide-content">
+                <h1>Go-to-Market: Lean & Targeted</h1>
+                <div class="gtm-strategy">
+                    <div class="gtm-phase">
+                        <h3>Phase 1: Developer Partnerships</h3>
+                        <ul>
+                            <li>50+ developer partnerships (B2B focus)</li>
+                            <li>College campus network activation</li>
+                            <li>₹5K/day targeted digital ads</li>
+                        </ul>
+                    </div>
+                    <div class="gtm-phase">
+                        <h3>Phase 2: NGO & Social Impact</h3>
+                        <ul>
+                            <li>NGO housing verification programs</li>
+                            <li>Social media organic growth</li>
+                            <li>Word-of-mouth referral systems</li>
+                        </ul>
+                    </div>
+                    <div class="gtm-phase">
+                        <h3>Phase 3: Scale & Expand</h3>
+                        <ul>
+                            <li>Tier-2/3 city expansion</li>
+                            <li>Corporate relocation partnerships</li>
+                            <li>Technology white-labeling</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="marketing-efficiency">
+                    <h3>🎯 Marketing Efficiency: ₹150 CAC vs ₹500+ industry average</h3>
+                </div>
+                <div class="slide-number">9/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Financial Projections -->
+        <div class="slide" data-slide="10">
+            <div class="slide-content">
+                <h1>Financial Projections: Path to ₹50 Cr Revenue</h1>
+                <div class="projections-image">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/30d3d33374b9825e52a376e37101ad59/8e2d3f64-1f0d-4d09-9714-5d78224832d4/bfb4afa9.png" alt="3-Year Projections" class="chart-image">
+                </div>
+                <div class="projections-table">
+                    <div class="projection-year">
+                        <h3>Year 1</h3>
+                        <div class="metrics">
+                            <p><strong>Revenue:</strong> ₹3 Cr</p>
+                            <p><strong>Profit:</strong> ₹2 Cr (67%)</p>
+                            <p><strong>Properties:</strong> 1,000</p>
+                        </div>
+                    </div>
+                    <div class="projection-year">
+                        <h3>Year 2</h3>
+                        <div class="metrics">
+                            <p><strong>Revenue:</strong> ₹15 Cr</p>
+                            <p><strong>Profit:</strong> ₹10 Cr (67%)</p>
+                            <p><strong>Properties:</strong> 10,000</p>
+                        </div>
+                    </div>
+                    <div class="projection-year">
+                        <h3>Year 3</h3>
+                        <div class="metrics">
+                            <p><strong>Revenue:</strong> ₹50 Cr</p>
+                            <p><strong>Profit:</strong> ₹35 Cr (70%)</p>
+                            <p><strong>Properties:</strong> 50,000+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-number">10/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Technology Roadmap -->
+        <div class="slide" data-slide="11">
+            <div class="slide-content">
+                <h1>Technology Roadmap</h1>
+                <div class="tech-timeline">
+                    <div class="tech-phase">
+                        <h3>Year 1: Verification Platform</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Property verification system</span>
+                            <span class="tech-item">Mobile app & web platform</span>
+                            <span class="tech-item">Basic analytics & reporting</span>
+                        </div>
+                    </div>
+                    <div class="tech-phase">
+                        <h3>Year 2: AR Tours</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">360° AR property tours</span>
+                            <span class="tech-item">Virtual staging tools</span>
+                            <span class="tech-item">Advanced search & filters</span>
+                        </div>
+                    </div>
+                    <div class="tech-phase">
+                        <h3>Year 3: VR + AI Valuation</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Full VR experiences</span>
+                            <span class="tech-item">AI property valuation</span>
+                            <span class="tech-item">Predictive market analysis</span>
+                        </div>
+                    </div>
+                    <div class="tech-phase">
+                        <h3>Year 4: Metaverse Ready</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Metaverse property showcases</span>
+                            <span class="tech-item">Blockchain transactions</span>
+                            <span class="tech-item">Smart contract automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-number">11/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Competitive Advantage -->
+        <div class="slide" data-slide="12">
+            <div class="slide-content">
+                <h1>Competitive Advantage: "Anti-Loss Platform"</h1>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <h3>💰 Profitable from Year 1</h3>
+                        <p>67% profit margin vs competitors' massive losses</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>✅ Verification Moat</h3>
+                        <p>Independent certification creates trust barrier</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>🚀 Technology Integration</h3>
+                        <p>AR/VR + AI roadmap with revenue generation</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>🎯 Lean Operations</h3>
+                        <p>₹40-45L vs competitors' ₹400+ Cr investments</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>🤝 Trust-First Model</h3>
+                        <p>Solving fundamental market problem</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>📈 Superior Unit Economics</h3>
+                        <p>High margin services vs low margin listings</p>
+                    </div>
+                </div>
+                <div class="slide-number">12/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Funding Ask -->
+        <div class="slide" data-slide="13">
+            <div class="slide-content">
+                <h1>Funding Ask: ₹40-45L Initial, ₹1-3 Cr Total</h1>
+                <div class="funding-comparison">
+                    <div class="funding-us">
+                        <h3>Our Ask</h3>
+                        <h2>₹40-45L Initial</h2>
+                        <h2>₹1-3 Cr (3 years)</h2>
+                        <p class="profit-highlight">→ Profitable from Year 1</p>
+                    </div>
+                    <div class="funding-vs">
+                        <h3>VS</h3>
+                        <div class="vs-symbol">⚡</div>
+                    </div>
+                    <div class="funding-competitors">
+                        <h3>Competitors</h3>
+                        <h2>₹400+ Cr Losses</h2>
+                        <h2>Annually</h2>
+                        <p class="loss-highlight">→ Still burning cash</p>
+                    </div>
+                </div>
+                <div class="funding-efficiency">
+                    <h3>🎯 100x More Efficient Investment</h3>
+                    <p>Generate profits while others burn billions</p>
+                </div>
+                <div class="slide-number">13/14</div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Vision -->
+        <div class="slide" data-slide="14">
+            <div class="slide-content vision-slide">
+                <h1>Vision: India's Most Profitable PropTech</h1>
+                <div class="vision-path">
+                    <div class="vision-milestone">
+                        <h2>2025-2026</h2>
+                        <h3>Profitable Launch</h3>
+                        <p>₹2 Cr profit in Year 1, establish verification framework</p>
+                    </div>
+                    <div class="vision-milestone">
+                        <h2>2027-2028</h2>
+                        <h3>Market Leadership</h3>
+                        <p>₹35 Cr profit, most trusted platform in India</p>
+                    </div>
+                    <div class="vision-milestone">
+                        <h2>2029-2030</h2>
+                        <h3>IPO-Ready Unicorn</h3>
+                        <p>₹2,000+ Cr valuation, sustainable profit leader</p>
+                    </div>
+                </div>
+                <div class="vision-statement">
+                    <h2>Building India's Profitable Real Estate Future</h2>
+                    <p>Where trust drives transactions, verification ensures quality, and profitability sustains growth.</p>
+                </div>
+                <div class="contact-cta">
+                    <h3>Ready to Join the Profitable Revolution?</h3>
+                    <p>Contact: Shuaib Siddiqui | +91 9891553661 | info@greenariabuildtech.com</p>
+                </div>
+                <div class="slide-number">14/14</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
